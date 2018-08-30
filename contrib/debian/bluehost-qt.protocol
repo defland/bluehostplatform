@@ -1,0 +1,11 @@
+[Protocol]
+exec=bluehost-qt '%u'
+protocol=bluehost
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

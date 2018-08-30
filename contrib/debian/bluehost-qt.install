@@ -1,0 +1,6 @@
+usr/local/bin/bluehost-qt usr/bin
+share/pixmaps/bluehost32.xpm usr/share/pixmaps
+share/pixmaps/bluehost16.xpm usr/share/pixmaps
+share/pixmaps/bluehost128.png usr/share/pixmaps
+debian/bluehost-qt.desktop usr/share/applications
+debian/bluehost-qt.protocol usr/share/kde4/services/

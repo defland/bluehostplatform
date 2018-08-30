@@ -1,0 +1,22 @@
+[Unit]
+Description=Bluehost's distributed currency daemon
+After=network.target
+
+[Service]
+User=bluehostcore
+Group=bluehostcore
+
+Type=forking
+PIDFile=/var/lib/bluehostd/bluehostd.pid
+ExecStart=/usr/bin/bluehostd -daemon -pid=/var/lib/bluehostd/bluehostd.pid \
+-conf=/etc/bluehostcore/bluehost.conf -datadir=/var/lib/bluehostd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
